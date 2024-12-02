@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./libs/mindar/mindar-image-three.prod.js"></script>
+    <script src="./main.js" type="module"></script>
+
+    <style>
+      html, body {
+	position: relative; margin: 0; width: 100%; height: 100%; overflow: hidden;
+      }
+      .ar-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+  background-color:purple;
+}
+
+.product-info {
+  background: url("/assets/purplekale.jpg");
+  background-size: 100% auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: 300px;
+}
+
+.product-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffff;
+  margin-bottom: 10px;
+}
+.product-name-english {
+  color: #fff;
+}
+
+.product-status {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.status-label {
+  margin-right: 10px;
+}
+
+.status-value {
+  font-weight: bold;
+  color: #fff;
+}
+
+.status-icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #2ecc71;
+  margin-left: 10px;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div id="ar-div">
+      <div class="ar">
+        <div class="product-info">
+          <h2 class="product-name">Healthy Maven</h2>
+          <div class="product-name-english">
+            <span class="label">Product:</span>
+            <span class="value">English Purple Kale</span>
+          </div>
+          <div class="product-status">
+            <span class="status-label">Product Traceability:</span>
+            <span class="status-value">100% Organic</span>
+            <span class="status-icon"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
